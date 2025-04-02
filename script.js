@@ -1,7 +1,7 @@
 function minDate(dates) {
   //write you code here
 	let minDate = new Date(Math.min(...dates.map(date => new Date(date))));
-		return minDate.toISOString.split('T')[0];
+		return minDate.toISOString().split('T')[0];
 	
 }
 
